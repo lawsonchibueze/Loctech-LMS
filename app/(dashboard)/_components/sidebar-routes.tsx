@@ -7,14 +7,14 @@ import { SidebarItem } from "./sidebar-item";
 
 const guestRoutes = [
   {
-    icon: Compass,
-    label: "Courses",
-    href: "/search",
-  },
-  {
     icon: Layout,
     label: "Dashboard",
     href: "/",
+  },
+  {
+    icon: Compass,
+    label: "Browse",
+    href: "/search",
   },
 ];
 
@@ -29,7 +29,7 @@ const teacherRoutes = [
     label: "Analytics",
     href: "/teacher/analytics",
   },
-];
+]
 
 export const SidebarRoutes = () => {
   const pathname = usePathname();
@@ -49,5 +49,5 @@ export const SidebarRoutes = () => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
